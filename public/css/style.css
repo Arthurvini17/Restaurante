@@ -66,9 +66,12 @@ header {
     justify-content: flex-end;
     display: flex;
     flex-direction: column;
-   
-   
+    background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+   
 
 .pratos {
    
@@ -79,12 +82,28 @@ header {
     flex-direction: column;
     gap: 30px;
     margin-right: 100px;
+    
+    
 }
 
 .pratos .calabresa .foto-calabresa  {
     width: auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     
 }
+
+
+.pratos .calabresa img {
+  border-radius: 8px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
 
 #cardapio .seta img{
   width: 100px;
@@ -102,10 +121,6 @@ header {
  
   
   
-}
-
-.pratos .calabresa img {
-    border-radius: 8px;
 }
 
 
@@ -129,6 +144,10 @@ header {
     width: 300px;
     border-radius: 8px;
     
+
+
+
+
     
 }
 
@@ -137,7 +156,6 @@ header {
     justify-content: center;
     align-items: center;
      display: inline-flex;
-    
   
      gap: 4px;
      
