@@ -66,7 +66,8 @@ header {
     justify-content: flex-end;
     display: flex;
     flex-direction: column;
-    margin-right: 300px;
+   
+   
 }
 
 .pratos {
@@ -77,12 +78,30 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-right: 100px;
 }
 
 .pratos .calabresa .foto-calabresa  {
     width: auto;
     
+}
+
+#cardapio .seta img{
+  width: 100px;
+  cursor: pointer;
+}
+#cardapio .seta {
+  position: fixed;
+  
    
+  
+  
+    top:  800px;
+    z-index: 1;
+  
+ 
+  
+  
 }
 
 .pratos .calabresa img {
@@ -96,7 +115,7 @@ header {
    align-items: center;
     display: inline-flex;
    
-    border: 10px solid black;
+    
     gap: 4px;
    
   
@@ -119,7 +138,7 @@ header {
     align-items: center;
      display: inline-flex;
     
-     border: 10px solid black;
+  
      gap: 4px;
      
      
