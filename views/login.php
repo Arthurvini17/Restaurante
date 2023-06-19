@@ -14,10 +14,12 @@
             <img src="../public/imagens/logotipo-da-pizzaria.png">
         </div>
         <div class="pai">
+            <h1>Acesse sua conta</h1>
             <form action="../controllers/logar.php" method="post">
-                <input type="email" placeholder="Insira Seu Email" name="email">
-                <input type="password" placeholder="Insira Sua Senha" name="senha">
+                 <label for="email">Insira seu email</label> <input type="email"  name="email" >
+                <label> Insira sua senha</label><input type="password"  name="senha">
                 <input type="submit" value="Logar">
+                <a href="../views/registrar.php">Não tem uma conta? Crie uma aqui</a>
 
             </form>
 

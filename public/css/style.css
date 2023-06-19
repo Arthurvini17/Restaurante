@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
 body {
    
     height: 100vh;
@@ -14,6 +16,20 @@ header {
   
     
   }
+
+  /* #cardapio .seta img{
+  width: 100px;
+  cursor: pointer;
+}
+#cardapio .seta {
+  position: fixed;
+  
+  
+    top:  800px;
+    z-index: -2;
+
+} */
+
   
   .navbar {
     display: flex;
@@ -62,23 +78,41 @@ header {
 
 #cardapio {
     margin-top: 240px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    display: flex;
+   
     flex-direction: column;
     background-image: linear-gradient(to right, #FFC371, #FF5F6D);
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins';
 }
-   
+
+
+
+#cardapio .titulo{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+
+#cardapio .titulo h1 { 
+  font-size: 30px;
+}
+
+#cardapio .titulo h1::after {
+  content: "";
+  border-bottom: 4px solid black;
+  display: flex;
+}
+
 
 .pratos {
    
-   
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
     flex-direction: column;
     gap: 30px;
     margin-right: 100px;
@@ -87,78 +121,114 @@ header {
 }
 
 .pratos .calabresa .foto-calabresa  {
-    width: auto;
+    width: 300px;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
-    
 }
-
 
 .pratos .calabresa img {
   border-radius: 8px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
-
-
-#cardapio .seta img{
-  width: 100px;
-  cursor: pointer;
-}
-#cardapio .seta {
-  position: fixed;
-  
-   
-  
-  
-    top:  800px;
-    z-index: 1;
-  
- 
-  
-  
-}
-
-
-
 .pratos .calabresa {
    justify-content: center;
    align-items: center;
     display: inline-flex;
-   
-    
     gap: 4px;
    
-  
-   
-    
+     
 }
 
+/* divisao  */
 
+.pratos .queijo .foto-queijo  {
+  border-radius: 5px;
+  cursor: pointer;
+  
+
+  
+}
 
 .pratos .queijo .foto-queijo img {
-    width: 300px;
+  cursor: pointer;
     border-radius: 8px;
-    
-
-
-
-
-    
+  
 }
+
 
 
 .pratos .queijo  {
     justify-content: center;
     align-items: center;
      display: inline-flex;
+     gap: 4px;  
+ }
+
+
+ /* divisao  */
+
+ .pratos .catu .foto-catu  {
+ 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.pratos .catu .foto-catu img {
+  width: 300px;
+    border-radius: 8px;
   
-     gap: 4px;
-     
-     
+}
+
+
+
+.pratos .catu   {
+    justify-content: center;
+    align-items: center;
+     display: inline-flex;
+     gap: 4px;  
+ }
+
+
+ #sobre-nos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ }
+
+
+ #sobre-nos .all h1{
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  filter: drop-shadow(10px 10px 10px  black);
+  font-family: 'Poppins';
+ }
+
+ #sobre-nos .loc img {
+  width: 100%;
+ 
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px black;
+ }
+
+ footer {
+  background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ }
+
+ footer h1{
+ 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ }
+
+ footer .git  img{
+  color: black;
  }
 
