@@ -116,6 +116,7 @@ header {
     flex-direction: column;
     gap: 30px;
     margin-right: 100px;
+    filter: drop-shadow(1px 1px 1px black);
     
     
 }
@@ -135,6 +136,7 @@ header {
    align-items: center;
     display: inline-flex;
     gap: 4px;
+    
    
      
 }
@@ -219,6 +221,7 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
+  font-family: 'Poppins';
  }
 
  footer h1{
@@ -226,9 +229,24 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
+  font-size: 18px;
  }
 
  footer .git  img{
   color: black;
+  width: 50px;
+  transition: width 300ms ease-in-out;
+  
+ }
+
+ footer .git img:hover {
+  width: 100px;
+ }
+
+ footer .git {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
  }
 

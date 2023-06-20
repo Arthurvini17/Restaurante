@@ -83,9 +83,9 @@
 
     <footer id="footer">
         <div class="all">
-            <h1>Contato</h1>
+            <h1>Contato</h1> 
             <div class="git">
-                <h1>Arthur </h1>
+               
                 <a href="https://github.com/Arthurvini17"><img src="../public/imagens/github.svg" alt=""> </a>
         </div>
     </footer>

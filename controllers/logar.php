@@ -22,7 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-
+    if (empty($email) || ($senha)) {
+            echo "Email e/ou senha vazio";
+    }
 
 
 $sql = "SELECT email, senha FROM usuarios WHERE email = '$email' AND senha = '$senha'";
