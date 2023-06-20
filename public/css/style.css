@@ -101,11 +101,37 @@ header {
   font-size: 30px;
 }
 
+  @keyframes animacao {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(100px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .titulo {
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .titulo  h1:hover {
+    animation-name: animacao;
+    animation-duration: 2.5s;
+
+  }
+
 #cardapio .titulo h1::after {
   content: "";
   border-bottom: 4px solid black;
   display: flex;
 }
+
 
 
 .pratos {
@@ -125,19 +151,25 @@ header {
     width: 300px;
     border-radius: 5px;
     cursor: pointer;
+    transition: width 300ms ease-in;
 
 }
+
+.pratos .calabresa .foto-calabresa:hover {
+  width: 350px;
+
+}
+
 
 .pratos .calabresa img {
   border-radius: 8px;
 }
+
 .pratos .calabresa {
    justify-content: center;
    align-items: center;
     display: inline-flex;
     gap: 4px;
-    
-   
      
 }
 
@@ -145,17 +177,22 @@ header {
 
 .pratos .queijo .foto-queijo  {
   border-radius: 5px;
-  cursor: pointer;
-  
-
+ 
   
 }
+
 
 .pratos .queijo .foto-queijo img {
+  transition: width 300ms ease-in;
   cursor: pointer;
     border-radius: 8px;
+    width: 300px;
   
 }
+.pratos .queijo .foto-queijo img:hover {
+  width: 350px;
+}
+
 
 
 
@@ -180,9 +217,14 @@ header {
 .pratos .catu .foto-catu img {
   width: 300px;
     border-radius: 8px;
+    transition: width 300ms ease-in;
   
 }
 
+.pratos .catu .foto-catu img:hover {
+  width: 350px;
+
+}
 
 
 .pratos .catu   {
@@ -190,6 +232,7 @@ header {
     align-items: center;
      display: inline-flex;
      gap: 4px;  
+    
  }
 
 

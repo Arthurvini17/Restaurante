@@ -15,12 +15,8 @@ include('../controllers/conexao.php');
 <body>
 
 <section id="Formulario">
+<a href="../views/index.php">Voltar</a>
 <?php
-
-
-
-
-
     $sql = "SELECT * FROM usuarios";
     $result = mysqli_query($conn, $sql);
 
@@ -46,7 +42,10 @@ include('../controllers/conexao.php');
         echo "nenhum resultado encontrado";
     }
     ?>
+
+   
     </section>
+  
 </body>
 
 </html>
